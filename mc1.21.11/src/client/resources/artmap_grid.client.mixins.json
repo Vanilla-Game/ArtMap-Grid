@@ -1,0 +1,8 @@
+{
+  "required": true,
+  "package": "dev.artmapgrid.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "client": ["ItemFrameStateMixin", "ItemFrameRendererMixin"],
+  "injectors": { "defaultRequire": 1 }
+}
+

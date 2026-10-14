@@ -28,8 +28,8 @@
 Установите JDK 25. Из корня репозитория выполните:
 
 ```sh
-./gradlew -p mc1.21.11 -I verification/audit.init.gradle build auditCenterGeometry --no-configuration-cache
-./gradlew -p mc26.2 -I verification/audit.init.gradle build auditCenterGeometry --no-configuration-cache
+./gradlew -p mc1.21.11 -I "$PWD/verification/audit.init.gradle" build auditCenterGeometry --no-configuration-cache
+./gradlew -p mc26.2 -I "$PWD/verification/audit.init.gradle" build auditCenterGeometry --no-configuration-cache
 ```
 
 На Windows используйте `gradlew.bat`. Первая сборка загружает зависимости из интернета.

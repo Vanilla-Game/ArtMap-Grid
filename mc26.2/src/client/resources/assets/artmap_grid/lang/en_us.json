@@ -1,0 +1,23 @@
+{
+  "key.category.artmap_grid.controls": "ArtMap Grid",
+  "key.artmap_grid.toggle": "Toggle 32×32 grid",
+  "key.artmap_grid.center": "Toggle canvas center crosses",
+  "key.artmap_grid.sections": "Toggle pink section grid",
+  "message.artmap_grid.sections_enabled": "Section grid: on",
+  "message.artmap_grid.sections_disabled": "Section grid: off",
+  "settings.artmap_grid.title": "ArtMap Grid — settings",
+  "settings.artmap_grid.size": "Size: %s×%s px · %s×%s sections %s",
+  "settings.artmap_grid.option": "%s×%s pixels — %s×%s sections",
+  "settings.artmap_grid.grid": "Gray grid (G): %s",
+  "settings.artmap_grid.center": "Center crosses (F): %s",
+  "settings.artmap_grid.sections": "Pink sections (N): %s",
+  "settings.artmap_grid.seated": "Only while seated at an easel: %s",
+  "key.artmap_grid.opacity": "Cycle grid opacity",
+  "message.artmap_grid.enabled": "ArtMap grid: on",
+  "message.artmap_grid.disabled": "ArtMap grid: off",
+  "message.artmap_grid.opacity": "Grid opacity: %s%%",
+  "message.artmap_grid.center_enabled": "Canvas center: crosses on",
+  "message.artmap_grid.center_disabled": "Canvas center: crosses off",
+  "modmenu.summaryTranslation.artmap_grid": "32×32 grid and cross marks inside the four central ArtMap canvas pixels.",
+  "modmenu.descriptionTranslation.artmap_grid": "Client-side guides for painting on 32×32 ArtMap canvases.\n\nG toggles the subtle gray pixel grid.\nF toggles cross marks inside the four central pixels.\n\nThe grid and crosses work independently. Keys can be reassigned in Controls. Guides are visible only to you and never become part of the painting.\n\nAuthor: ani_kaa (Vanilla Game)\n\nN toggles pink section guides. Choose 2×2, 4×4, 8×8, 16×16 or 32×32 pixel sections in this mod's Mod Menu settings.\n\nSource code: https://github.com/Vanilla-Game/ArtMap-Grid"
+}

@@ -1,0 +1,19 @@
+# Generated output and local caches must never be committed.
+**/.gradle/
+**/build/
+**/out/
+**/run/
+**/work/
+artifacts/
+*.jar
+!gradle/wrapper/gradle-wrapper.jar
+*.class
+*.zip
+*.log
+*.hprof
+*.jfr
+.idea/
+.vscode/
+*.iml
+.DS_Store
+Thumbs.db

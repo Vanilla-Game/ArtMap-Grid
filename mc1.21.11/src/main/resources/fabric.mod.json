@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "artmap_grid",
+  "version": "${version}",
+  "name": "ArtMap Grid",
+  "description": "Client-side guides for 32×32 ArtMap canvases. G toggles the gray pixel grid, F toggles the four center crosses, and N toggles pink section guides. Choose section size in Mod Menu settings. All guides work independently and never become part of the painting.\n\nAuthor: ani_kaa (Vanilla Game)\n\nSource code: https://github.com/Vanilla-Game/ArtMap-Grid",
+  "authors": [
+    "ani_kaa (Vanilla Game)"
+  ],
+  "icon": "assets/artmap_grid/icon.png",
+  "license": "CC0-1.0",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "dev.artmapgrid.ArtMapGridClient"
+    ],
+    "modmenu": [
+      "dev.artmapgrid.ModMenuIntegration"
+    ]
+  },
+  "suggests": {
+    "modmenu": "*"
+  },
+  "mixins": [
+    "artmap_grid.client.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.19.3",
+    "minecraft": "1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  },
+  "contact": {
+    "sources": "https://github.com/Vanilla-Game/ArtMap-Grid"
+  }
+}

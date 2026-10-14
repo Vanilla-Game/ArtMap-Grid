@@ -1,0 +1,7 @@
+gradle.projectsEvaluated {
+    rootProject.tasks.register('auditCenterGeometry', JavaExec) {
+        dependsOn rootProject.tasks.named('clientClasses')
+        classpath = rootProject.sourceSets.client.compileClasspath + rootProject.sourceSets.client.output + rootProject.sourceSets.main.output
+        mainClass = new File(rootProject.projectDir, '../verification/GeometryAudit.java').absolutePath
+    }
+}
