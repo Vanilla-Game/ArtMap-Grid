@@ -12,7 +12,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        target: [mc1.21.11, mc26.2]
+        target: [mc1.21.11, mc26.2, mc26.3]
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-java@v4

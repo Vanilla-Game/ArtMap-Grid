@@ -22,6 +22,7 @@
 | --- | --- | --- |
 | 1.21.11 | `mc1.21.11` | 21+ |
 | 26.2 | `mc26.2` | 25+ |
+| 26.3 | `mc26.3` | 25+ |
 
 ## Сборка и проверка
 
@@ -30,6 +31,7 @@
 ```sh
 ./gradlew -p mc1.21.11 -I "$PWD/verification/audit.init.gradle" build auditCenterGeometry --no-configuration-cache
 ./gradlew -p mc26.2 -I "$PWD/verification/audit.init.gradle" build auditCenterGeometry --no-configuration-cache
+./gradlew -p mc26.3 -I "$PWD/verification/audit.init.gradle" build auditCenterGeometry --no-configuration-cache
 ```
 
 На Windows используйте `gradlew.bat`. Первая сборка загружает зависимости из интернета.
@@ -38,10 +40,10 @@
 
 ## Релизы
 
-Первый запуск release workflow собирает и публикует текущую версию с двумя JAR и SHA256SUMS.txt.
+Первый запуск release workflow собирает и публикует текущую версию с тремя JAR и SHA256SUMS.txt.
 Дальше Release Please создаёт PR с изменениями `version.txt`, манифеста и CHANGELOG.md
 по Conventional Commits (`fix:`, `feat:`). После слияния release PR этот же workflow
-создаёт релиз, собирает обе версии и прикладывает JAR-файлы. Сборки не хранятся в Git.
+создаёт релиз, собирает все три версии и прикладывает JAR-файлы. Сборки не хранятся в Git.
 Для повторного запуска доступен workflow_dispatch.
 
 В Settings → Actions → General необходимо разрешить GitHub Actions создавать pull requests.

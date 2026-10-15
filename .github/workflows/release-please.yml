@@ -47,11 +47,12 @@ jobs:
           java-version: '25'
       - uses: gradle/actions/setup-gradle@v4
         if: steps.initial.outputs.bootstrap == 'true' || steps.release.outputs.release_created == 'true'
-      - name: Build both Minecraft versions
+      - name: Build all Minecraft versions
         if: steps.initial.outputs.bootstrap == 'true' || steps.release.outputs.release_created == 'true'
         run: |
           ./gradlew -p mc1.21.11 -I "$PWD/verification/audit.init.gradle" build auditCenterGeometry --no-configuration-cache
           ./gradlew -p mc26.2 -I "$PWD/verification/audit.init.gradle" build auditCenterGeometry --no-configuration-cache
+          ./gradlew -p mc26.3 -I "$PWD/verification/audit.init.gradle" build auditCenterGeometry --no-configuration-cache
       - name: Publish JARs and checksums
         if: steps.initial.outputs.bootstrap == 'true' || steps.release.outputs.release_created == 'true'
         env:
@@ -59,13 +60,12 @@ jobs:
         shell: bash
         run: |
           mkdir -p artifacts
-          find mc1.21.11/build/libs mc26.2/build/libs -maxdepth 1 -name '*.jar' ! -name '*-sources.jar' -exec cp {} artifacts/ \;
-          test "$(find artifacts -name '*.jar' | wc -l)" = 2
+          find mc1.21.11/build/libs mc26.2/build/libs mc26.3/build/libs -maxdepth 1 -name '*.jar' ! -name '*-sources.jar' -exec cp {} artifacts/ \;
+          test "$(find artifacts -name '*.jar' | wc -l)" = 3
           (cd artifacts && sha256sum *.jar > SHA256SUMS.txt)
           if ! gh release view "$RELEASE_TAG" >/dev/null 2>&1; then
             gh release create "$RELEASE_TAG" --target "$GITHUB_SHA" --title "ArtMap Grid ${RELEASE_TAG#v}" --notes-file CHANGELOG.md
           fi
           gh release upload "$RELEASE_TAG" artifacts/*.jar artifacts/SHA256SUMS.txt --clobber
-
 
 

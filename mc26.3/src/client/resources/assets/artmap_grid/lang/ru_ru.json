@@ -1,0 +1,23 @@
+{
+  "key.category.artmap_grid.controls": "ArtMap — сетка",
+  "key.artmap_grid.toggle": "Включить / выключить сетку 32×32",
+  "key.artmap_grid.center": "Показать / скрыть крестики в центре холста",
+  "key.artmap_grid.sections": "Показать / скрыть розовую разметку секций",
+  "message.artmap_grid.sections_enabled": "Разметка секций: включена",
+  "message.artmap_grid.sections_disabled": "Разметка секций: выключена",
+  "settings.artmap_grid.title": "ArtMap Grid — настройки",
+  "settings.artmap_grid.size": "Секции: %s×%s пикс. · %s×%s секций %s",
+  "settings.artmap_grid.option": "%s×%s пикселей — %s×%s секций",
+  "settings.artmap_grid.grid": "Серая сетка (G): %s",
+  "settings.artmap_grid.center": "Центральные крестики (F): %s",
+  "settings.artmap_grid.sections": "Розовые секции (N): %s",
+  "settings.artmap_grid.seated": "Только сидя за мольбертом: %s",
+  "key.artmap_grid.opacity": "Изменить прозрачность сетки",
+  "message.artmap_grid.enabled": "Сетка ArtMap: включена",
+  "message.artmap_grid.disabled": "Сетка ArtMap: выключена",
+  "message.artmap_grid.opacity": "Непрозрачность сетки: %s%%",
+  "message.artmap_grid.center_enabled": "Центр холста: крестики включены",
+  "message.artmap_grid.center_disabled": "Центр холста: крестики выключены",
+  "modmenu.summaryTranslation.artmap_grid": "Сетка 32×32 и крестики в четырёх центральных пикселях холста ArtMap.",
+  "modmenu.descriptionTranslation.artmap_grid": "Клиентские ориентиры для рисования на холстах ArtMap 32×32.\n\nG — включить или выключить лёгкую серую сетку.\nF — показать или скрыть крестики внутри четырёх центральных пикселей.\n\nСетка и крестики переключаются независимо. Клавиши можно изменить в настройках управления. Разметка видна только вам и не сохраняется в картине.\n\nАвтор: ani_kaa (Vanilla Game)\n\nN — розовая разметка равных секций. Размер секции: 2×2, 4×4, 8×8, 16×16 или 32×32 пикселя. Выберите его в настройках этого мода в Mod Menu.\n\nИсходный код: https://github.com/Vanilla-Game/ArtMap-Grid"
+}
